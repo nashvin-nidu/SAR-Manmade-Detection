@@ -124,6 +124,12 @@ a{
     color: var(--colorPrimary);
     background-color: var(--colorSecondary);
     border: none;
+    cursor: pointer;
+}
+.continue-button > button:hover{
+    background-color: var(--colorPrimary);
+    border: 2px solid var(--colorSecondary);
+    color: var(--colorSecondary);
 }
 
 
@@ -174,19 +180,31 @@ input[type="date"] {
     border: none;
     border-radius: 1rem;
     font-size: 0.9em;
-    font-weight: 400;
+    font-weight: 600;
     color: #ffff;
     background: blue;
+}
+.side-bar-btn:hover{
+    background: rgb(81, 81, 208);
+    cursor: pointer;
+}
+.side-bar-btn:active{
+    background: rgb(81, 81, 208);
+    font-size: 0.6em;
 }
 
 
 /* Map View */
 .map-view{
-    background-color: blue;
-    /* height: 1000vh; */
+    height: 1000vh;
     width: 76%;
 }
 
+.map-view > div{
+    margin-top: 5rem;
+    z-index: 0;
+}
 .map-img{
     width: 100%;
 }
+

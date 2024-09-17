@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,17 @@
     <link rel="shortcut icon" href="./image/Sentinal-1 DOC.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
 
 
 </head>
+
 <body>
 
     <!-- Header -->
-     <div class="header-section">
+    <div class="header-section">
         <div class="img-logo">
             <img src="./Image/Sentinal-1 Logo.png" alt="">
         </div>
@@ -35,7 +39,7 @@
             <button type="button">Continue</button>
         </div>
     </div>
-    
+
     <!-- Hero -->
     <div class="hero-section">
         <div class="sidebar">
@@ -47,12 +51,12 @@
                     <input type="range" id="threshold-slider" min="0" max="100" value="50">
                     <span id="threshold-value">50</span>
                 </div>
-                
+
                 <!-- Date Range Selection -->
                 <div class="section">
                     <label for="start-date">Start Date</label>
                     <input type="date" id="start-date">
-                    
+
                     <label for="end-date">End Date</label>
                     <input type="date" id="end-date">
                 </div>
@@ -79,11 +83,11 @@
                         Show as Polygons
                     </label>
                     <label>
-                        <input type="checkbox" id="download-geojson">
+                        <input type="checkbox" id="downloadGeoJSON">
                         Download GeoJSON
                     </label>
                     <label>
-                        <input type="checkbox" id="download-shapefile">
+                        <input type="checkbox" id="downloadShapefile">
                         Download Shapefile
                     </label>
                 </div>
@@ -92,23 +96,27 @@
                 <div class="section">
                     <button class="side-bar-btn" id="run-analysis">Download</button>
                 </div>
-
+                <h1>
+                </h1>
             </div>
 
         </div>
         <div class="map-view">
-            <div id="map" style="height: 600px;"></div>
+            <div id="map" style="height: 1000px;"></div>
         </div>
-     </div>
-    <script src="./script.js"></script>
+    </div>
 
-    <!-- Leaflet integration -->
+
+    <!-- leaflet Integration -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-    <!-- Leaflet Draw Integration  -->
+    <!-- leaflet-Draw Integration -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+    <script src="./script.js"></script>
+
 </body>
 
 
