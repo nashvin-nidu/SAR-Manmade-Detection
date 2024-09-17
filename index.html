@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>SAR-Dectection</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./image/Sentinal-1 DOC.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!-- Header -->
+     <div class="header-section">
+        <div class="img-logo">
+            <img src="./Image/Sentinal-1 Logo.png" alt="">
+        </div>
+        <div class="hyperlinks">
+            <div class="btn-hyperlink">
+                <a href="">Dashboad</a>
+            </div>
+            <div class="btn-hyperlink">
+                <a href="">Alerts</a>
+            </div>
+            <div class="btn-hyperlink">
+                <a href="">Setting</a>
+            </div>
+        </div>
+        <div class="continue-button">
+            <button type="button">Continue</button>
+        </div>
+    </div>
+    
+    <!-- Hero -->
+    <div class="hero-section">
+        <div class="sidebar">
+            <div class="sidebar-controls">
+                <h2>Change Detection Settings</h2>
+                <!-- Threshold Settings -->
+                <div class="section">
+                    <label for="threshold-slider">Threshold</label>
+                    <input type="range" id="threshold-slider" min="0" max="100" value="50">
+                    <span id="threshold-value">50</span>
+                </div>
+                
+                <!-- Date Range Selection -->
+                <div class="section">
+                    <label for="start-date">Start Date</label>
+                    <input type="date" id="start-date">
+                    
+                    <label for="end-date">End Date</label>
+                    <input type="date" id="end-date">
+                </div>
+
+                <!-- Change Detection Filters -->
+                <div class="section">
+                    <h3>Change Detection Filters</h3>
+                    <label>
+                        <input type="checkbox" id="man-made-changes" checked>
+                        Man-Made Changes
+                    </label>
+                </div>
+
+                <!-- Select Area -->
+                <div class="section">
+                    <button class="side-bar-btn" id="draw-polygon">Draw Polygon</button>
+                </div>
+
+                <!-- Results Output -->
+                <div class="section">
+                    <h3>Results Output</h3>
+                    <label>
+                        <input type="checkbox" id="show-polygons" checked>
+                        Show as Polygons
+                    </label>
+                    <label>
+                        <input type="checkbox" id="download-geojson">
+                        Download GeoJSON
+                    </label>
+                    <label>
+                        <input type="checkbox" id="download-shapefile">
+                        Download Shapefile
+                    </label>
+                </div>
+
+                <!-- Run Change Detection Button -->
+                <div class="section">
+                    <button class="side-bar-btn" id="run-analysis">Download</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="map-view">
+            <div id="map" style="height: 600px;"></div>
+        </div>
+     </div>
+    <script src="./script.js"></script>
+
+    <!-- Leaflet integration -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Leaflet Draw Integration  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+</body>
+
+
+</html>
