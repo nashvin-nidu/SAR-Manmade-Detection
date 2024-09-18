@@ -1,3 +1,6 @@
+const latitudeDisplay = document.getElementById('lati-display');
+const longtitudeDisplay = document.getElementById('long-display');
+
 //Change the threshold value
 document
   .getElementById("threshold-slider")
@@ -64,29 +67,32 @@ function drawPolygon() {
     drawnItems.addLayer(layer);
   });
 
+   
 //   Extracting the Coordinates:
 var coordinates = layer.getLatLngs();
   coordinates[0].forEach(function(coord) {
   console.log('Lat: ' + coord.lat + ', Lng: ' + coord.lng);
+  const coordinatesArray = 'Lat: ' + coord.lat + ', Lng: ' + coord.lng;
 });
 
+console.log(coordinatesArray);
 
-// Downloading the Leafdata
-const downloadGeoJSON = document.getElementById('downloadGeoJSON');
-const downloadShapefile = document.getElementById('downloadShapefile');
- // Function to ensure only one checkbox is selected between the two download options
- function onlyOne(checkbox) {
-  [downloadGeoJSON, downloadShapefile].forEach((item) => {
-      if (item !== checkbox) item.checked = false;
-  });
-}
-// Attach event listeners
-downloadGeoJSON.addEventListener('change', function() {
-  onlyOne(downloadGeoJSON);
-});    
-downloadShapefile.addEventListener('change', function() {
-  onlyOne(downloadShapefile);
-});
-        
 
-        
+
+
+
+
+
+
+
+
+
+
+
+// var vow = "hello";
+// var sentance = document.getElementById("#h2-sen");
+// sentance.innerText = vow;
+
+  // latitudeDisplay.innerText = 'Lat: ' + coord.lat;
+  // longtitudeDisplay.innerText = 'Lng: ' + coord.lng
+
