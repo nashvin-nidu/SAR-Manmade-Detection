@@ -1,6 +1,15 @@
 # SAR-Manmade-Detection
 Synthetic Aperture Radar
 
+Change detection between two SAR (Synthetic Aperture Radar) satellite images.
+
+In this project, I developed a solution to detect man-made changes while filtering out natural changes (e.g., water bodies, floods, snow cover, etc.). The solution uses Sentinel-1 SAR open-source satellite images and the Google Earth Engine platform to process and analyze data. Key features of the project include:
+
+-> Co-registered SAR image processing
+-> Scalable solutions for large areas of interest
+-> Generation of geographically referenced vector files for change outputs
+-> Customizable thresholds for filtering change results
+
 
 SAR Change Detection Project
 Overview
